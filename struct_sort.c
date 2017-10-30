@@ -1,5 +1,5 @@
 #include<stdio.h>
-#incng.h>
+#include<string.h>
 struct student {
     int id;
     double grades;
@@ -32,7 +32,7 @@ void struct_sort(struct student *st ,int n)
     {
         k=i;
         for(j=i+1;j<n;j++)
-            if(st[j].grades>st[j+1].grades)
+            if(st[j].grades>st[k].grades)
            k=j;
         if(k!=i){
              temp=st[i];
