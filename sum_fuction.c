@@ -1,22 +1,28 @@
 #include<stdio.h>
-
-int sum(int a[] ,int );
+#include<stdarg.h>
+int sum(int a, ... );
 
 int main()
 {
-    int a[100];
-    int i=0;
-    while(scanf("%d",&a[i])==1)
-        i++;
-    long k=sum (a,i);
-    printf("%ld",k);
+    printf("sum(1, 2, -1024) : %d\n ",
+           sum(1, 2 , -1024));
+    printf("sum(1, 2, 3, 4, -1024) : %d\n",
+           sum(1, 2, 3, 4, -1024));
+
     return 0;
 }
-int sum(int a[],int n)
+int sum(int a, ...)
 {
-    int i;
-    long k=0;
-    for(i=0;i<n;i++)
-        k+=a[i];
-    return k;
+    int sum = 0;
+    int c=a;
+    va_list ap;
+    va_start ( ap,a );
+
+    while( c != -1024 && c != 0)
+    {
+        sum += c;
+        c=va_arg( ap , int );
+    }
+    va_end(ap);
+    return sum;
 }
