@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1510934706 source:f:\homework\josephus_problem\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1510987370 source:f:\code\josephus_problem\main.c
+	<stdio.h>
+	<stdlib.h>
+	"head.h"
+
+1510987994 source:f:\code\josephus_problem\createcirlist.c
+	"head.h"
+
+1510988060 f:\code\josephus_problem\head.h
+	<stdio.h>
+	<stdlib.h>
+
+1510987994 source:f:\code\josephus_problem\josephcircle.c
+	"head.h"
+
+1510988060 source:f:\code\josephus_problem\head.h
+	<stdio.h>
+	<stdlib.h>
+
