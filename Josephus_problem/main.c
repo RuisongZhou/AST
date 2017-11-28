@@ -9,8 +9,10 @@ int main(void)
     CirList circle;
     printf("the number of people.\n");
     scanf("%d",&n);
+
     printf("The initial value of m when the number is first reported.\n");
     scanf("%d",&m);
+
     createCirList( &circle , n );
     JosephCircle( &circle , m );
     return 0;

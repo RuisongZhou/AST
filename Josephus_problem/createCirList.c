@@ -14,16 +14,19 @@ extern void createCirList(CirList *L, int n)
     {
         if ( i == 0)
         {
-            printf("enter the %d people's code.\n",i+1);
-            scanf("%d",&(*L)->data);
+           // printf("enter the %d people's code.\n",i+1);
+           //scanf("%d",&(*L)->data);
+           (*L)->data = i+5 ;
+
             (*L)->number = i+1;
 
         }
         else
         {
             newptr = (CirList)malloc(sizeof(CirNode));
-            printf("enter the %d people's code.\n",i+1);
-            scanf("%d",&newptr->data);
+            //printf("enter the %d people's code.\n",i+1);
+            //scanf("%d",&newptr->data);
+            newptr->data = i+5;
             newptr->number = i+1;
             while( phead->next != *L)
             phead = phead->next;

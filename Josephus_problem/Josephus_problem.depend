@@ -22,3 +22,22 @@
 	<stdio.h>
 	<stdlib.h>
 
+1510988060 source:f:\rep\josephus_problem\head.h
+	<stdio.h>
+	<stdlib.h>
+
+1510987994 source:f:\rep\josephus_problem\josephcircle.c
+	"head.h"
+
+1510988060 f:\rep\josephus_problem\head.h
+	<stdio.h>
+	<stdlib.h>
+
+1511787706 source:f:\rep\josephus_problem\createcirlist.c
+	"head.h"
+
+1511787633 source:f:\rep\josephus_problem\main.c
+	<stdio.h>
+	<stdlib.h>
+	"head.h"
+
