@@ -86,7 +86,7 @@ int MakeAnswer(graph *g) //识别结果
 	}
 	qsort(dis, p, sizeof(nd), cmp);
 	memset(SumCount, 0, sizeof(SumCount));
-	for (i = 0; i <= min(100,Maxn) ; i ++)
+	for (i = 0; i <= min(30,Maxn) ; i ++)
 		SumCount[dis[i].id] ++;
 	for (i = 0; i <= 9; i ++)
 	{
