@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512832152 source:f:\code\tree\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1512831237 source:f:\code\tree\tree.h
+	<stdbool.h>
+
