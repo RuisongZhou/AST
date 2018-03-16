@@ -6,14 +6,14 @@
 
 
 #define GR_H 32
-#define GR_W 32  //默认的训练集和测试集的宽和高
+#define GR_W 32  //脛卢脠脧碌脛脩碌脕路录炉潞脥虏芒脢脭录炉碌脛驴铆潞脥赂脽
 
 #define VECTOR_H 2
-#define VECTOR_W 2  //一块取特征值的区域的宽和高
+#define VECTOR_W 2  //脪禄驴茅脠隆脤脴脮梅脰碌碌脛脟酶脫貌碌脛驴铆潞脥赂脽
 
 typedef struct {
 	int w, h;
-	int a[GR_H][GR_W]; //原图分割成w*h的
+	int a[GR_H][GR_W]; //脭颅脥录路脰赂卯鲁脡w*h碌脛
 } graph;
 
 typedef struct {
@@ -25,7 +25,7 @@ int Maxn;
 graph train_data[10][2000];
 nd dis[20000];
 char tmp_init_s[GR_H][GR_W + 1];
-int sum_of[10];     //代表每个数字
+int sum_of[10];     //麓煤卤铆脙驴赂枚脢媒脳脰
 int right_ans_cnt;
 int total_cnt;
 
@@ -56,7 +56,7 @@ int cmp(const void *c, const void *d)
 }
 
 
-float cal_distance(graph *a, graph *b)   //计算欧氏距离
+float cal_distance(graph *a, graph *b)   //录脝脣茫脜路脢脧戮脿脌毛
 {
 	int sum = 0, r, c, t;
 	for (r = 0; r < a->h; r++)
@@ -68,7 +68,7 @@ float cal_distance(graph *a, graph *b)   //计算欧氏距离
 }
 
 
-int MakeAnswer(graph *g) //识别结果
+int MakeAnswer(graph *g) //脢露卤冒陆谩鹿没
 {
 	int i, j;
 	int SumCount[10];
@@ -102,7 +102,7 @@ int MakeAnswer(graph *g) //识别结果
 }
 
 
-int read_file_list(char *path)  //处理训练数据
+int read_file_list(char *path)  //麓娄脌铆脩碌脕路脢媒戮脻
 {
 	long Handle;
 	int i = 0;
@@ -145,7 +145,7 @@ int read_file_list(char *path)  //处理训练数据
 }
 
 
-void work(char *path) //处理测试数据
+void work(char *path) //麓娄脌铆虏芒脢脭脢媒戮脻
 {
 	long Handle;
 	//int i = 0;
@@ -193,7 +193,7 @@ void work(char *path) //处理测试数据
 }
 
 
-void read_a_single_file(char *f_path, graph *g)     //处理并保存数据
+void read_a_single_file(char *f_path, graph *g)     //麓娄脌铆虏垄卤拢麓忙脢媒戮脻
 {
 	FILE *f;
 	int w, h, i, j, r, c, *p;
@@ -204,10 +204,10 @@ void read_a_single_file(char *f_path, graph *g)     //处理并保存数据
             exit(0);
         }
 	h = 0;
-	while (fscanf(f, "%s", tmp_init_s[h++]) == 1); //读入每行数据
-	w = strlen(tmp_init_s[0]);  //每行长度
-	g->w = w / VECTOR_W;    //W是宽度
-	g->h = h / VECTOR_H;    //h是高度
+	while (fscanf(f, "%s", tmp_init_s[h++]) == 1); //露脕脠毛脙驴脨脨脢媒戮脻
+	w = strlen(tmp_init_s[0]);  //脙驴脨脨鲁陇露脠
+	g->w = w / VECTOR_W;    //W脢脟驴铆露脠
+	g->h = h / VECTOR_H;    //h脢脟赂脽露脠
 	for ( i = 0; i < h ; i += VECTOR_H )
 		for ( j = 0; j < w; j += VECTOR_W )
         {
