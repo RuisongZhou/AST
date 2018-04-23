@@ -19,7 +19,7 @@ extern void createCirList(CirList *L, int n)
            (*L)->number = i+1;
 
         }
-        else。  //第n个节点
+        else  //第n个节点
         {
             newptr = (CirList)malloc(sizeof(CirNode));   //创建节点
             printf("enter the %d people's code.\n",i+1);
