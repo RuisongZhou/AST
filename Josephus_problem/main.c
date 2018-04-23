@@ -13,7 +13,7 @@ int main(void)
     printf("The initial value of m when the number is first reported.\n");
     scanf("%d",&m);
 
-    createCirList( &circle , n );
-    JosephCircle( &circle , m );
+    createCirList( &circle , n );    //创建约瑟夫环
+    JosephCircle( &circle , m );    //循环约瑟夫环
     return 0;
 }
