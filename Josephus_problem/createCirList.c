@@ -25,7 +25,7 @@ extern void createCirList(CirList *L, int n)
             printf("enter the %d people's code.\n",i+1);
             scanf("%d",&newptr->data);
             newptr->number = i+1;
-            while( phead->next != *L)。  //找到头节点的前一个节点
+            while( phead->next != *L)。   //找到头节点的前一个节点
             phead = phead->next;
 
             newptr->next = phead->next;   //插入节点
