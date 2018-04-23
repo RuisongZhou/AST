@@ -21,7 +21,7 @@ extern void createCirList(CirList *L, int n)
         }
         else。  //第n个节点
         {
-            newptr = (CirList)malloc(sizeof(CirNode));   创建节点
+            newptr = (CirList)malloc(sizeof(CirNode));   //创建节点
             printf("enter the %d people's code.\n",i+1);
             scanf("%d",&newptr->data);
             newptr->number = i+1;
